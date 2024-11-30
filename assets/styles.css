@@ -1,0 +1,107 @@
+/* Toàn bộ trang */
+
+
+/* Sidebar */
+.sidebar {
+    width: 220px;  
+    padding: 0;
+    margin-top:-10px;
+    font-size:18px
+}
+
+/* Nội dung chính */
+.main-content {
+    width: calc(100% - 220px); /* Chiều rộng nội dung chính */
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+
+
+./* Định dạng tổng thể của menu */
+.menu {
+    background-color:#FF69B4;
+    
+}
+
+.menu ul {
+    list-style-type: none; /* Loại bỏ dấu chấm từ danh sách */
+    padding: 10px;
+    margin: 0; 
+   display:flex;
+}
+
+.menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* Làm chữ đậm để dễ đọc */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+/* Hiệu ứng khi di chuột vào các liên kết */
+.menu a:hover {
+    background-color: #007bff; /* Màu nền khi hover */
+    color: white;
+   
+}
+.menu a:active {
+background-color: #007bff; 
+    color: white;
+}
+/* Bảng danh sách sữa */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0; /* Thêm khoảng cách phía trên và dưới bảng */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+th {
+    background-color: #33ccff;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Hiệu ứng hover cho hàng */
+}
+
+td img {
+    max-width: 100px;
+    max-height: 120px; /* Đảm bảo hình ảnh không vượt quá chiều cao */
+    object-fit: cover; /* Cắt ảnh cho phù hợp với kích thước */
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+/* Thiết kế responsive cho các thiết bị di động */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Sidebar chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+        min-height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        width: 100%; /* Nội dung chiếm toàn bộ chiều rộng trên màn hình nhỏ */
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-left: 0;
+        width: 50px;
+    }
+}
