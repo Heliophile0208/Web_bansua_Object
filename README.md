@@ -62,7 +62,7 @@ Dự án này là một website bán sữa được xây dựng theo mô hình l
 
 ### 5. Mở trình duyệt và truy cập:
 
-- http://localhost/Webbansua/
+- http://localhost/Webbansua/index.php
 ---
 
 ## 📞 Liên Hệ
