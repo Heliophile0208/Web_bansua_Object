@@ -1,0 +1,76 @@
+
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+.tieude {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #FF69B4;
+    margin-bottom: 20px;
+}
+
+/* Bảng sản phẩm */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Hiển thị sản phẩm theo dòng */
+.product-table {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    height:350px;
+}
+
+.product-table img {
+    width: 150px;        
+    height: auto;        
+    object-fit: cover;   
+    border-radius: 8px;   
+}
+
+
+/* Thông tin sản phẩm */
+.product-table .info {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-table .info a {
+    font-weight: bold;
+    color: #FF69B4;
+    text-decoration: none;
+}
+
+.product-table .info a:hover {
+    text-decoration: underline;
+}
+/* Bỏ gạch chân của tất cả các liên kết */
+a {
+    text-decoration: none;
+}
+
+
+a:hover {
+    background-color: #f0f0f0;  
+    color: #007bff;
+}
+
+
