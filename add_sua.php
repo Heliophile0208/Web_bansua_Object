@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . 'db/database.php';
+include_once __DIR__ . '../db/database.php';
 include_once 'data/xl_sua.php';
 
 $xl_sua = new xl_sua();
@@ -52,6 +52,7 @@ $loai_sua = $xl_sua->getLoaiSua();
         .form-container {
             background-color: #fff;
             padding: 20px;
+            width:800px;
             margin: 0 auto;
         }
 
